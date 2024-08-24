@@ -47,7 +47,7 @@ This Rust tool helps you create a structured resource directory with predefined 
 
 ```sh
 Input the desired resource name:
-tmh_utils
+my_resource
 Input your name (to display on fxmanifest):
 Cherry
 Creating files for resource named: my_resource
@@ -62,3 +62,5 @@ Resource created successfully!
 
     - Framework imports.
     - Add manually the desired files.
+    - Alias guide for quicker usage
+    - Release direct .exe files
