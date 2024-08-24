@@ -15,8 +15,8 @@ This Rust tool helps you create a structured resource directory with predefined 
 1. **Clone the repository:**
 
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/ccheerry/cTool.git
+    cd cTool
     ```
 
 2. **Prepare the templates:**
@@ -56,3 +56,9 @@ yes
 Include web project? (yes/no)
 no
 Resource created successfully!
+```
+
+## To Do:
+
+    - Framework imports.
+    - Add manually the desired files.
