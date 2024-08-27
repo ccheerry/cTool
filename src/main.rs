@@ -77,22 +77,22 @@ fn main() {
         .write_all(fxmanifest_content.as_bytes())
         .expect("Failed writing to fxmanifest.lua");
 
-    let client_path = format!("{}/client/client.lua", name);
-    let mut client = File::create(&client_path).expect("Failed creating client.lua");
+    let client_path = format!("{}/client/main.lua", name);
+    let mut client = File::create(&client_path).expect("Failed creating client/main.lua");
     client
         .write_all(client_template.as_bytes())
-        .expect("Failed writing to client.lua");
+        .expect("Failed writing to client/main.lua");
 
-    let server_path = format!("{}/server/server.lua", name);
-    let mut server = File::create(&server_path).expect("Failed creating server.lua");
+    let server_path = format!("{}/server/main.lua", name);
+    let mut server = File::create(&server_path).expect("Failed creating server/main.lua");
     server
         .write_all(server_template.as_bytes())
-        .expect("Failed writing to server.lua");
+        .expect("Failed writing to server/main.lua");
 
     let data_path = format!("{}/data/data.lua", name);
-    let mut data = File::create(&data_path).expect("Failed creating data.lua");
+    let mut data = File::create(&data_path).expect("Failed creating data/data.lua");
     data.write_all(data_template.as_bytes())
-        .expect("Failed writing to data.lua");
+        .expect("Failed writing to data/data.lua");
 
     println!("Resource created successfully!");
 }
